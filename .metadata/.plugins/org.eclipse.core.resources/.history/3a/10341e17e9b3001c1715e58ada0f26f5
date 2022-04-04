@@ -1,7 +1,6 @@
 package com.JavaLive.Session6;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -23,8 +22,6 @@ public class HashMapExamples {
 	for(Integer s1 : s) {
 		System.out.println(m.get(s1));
 	}
-	
-	Map<Integer, String> m1 = new LinkedHashMap<Integer , String>();
 	
 	
 	
