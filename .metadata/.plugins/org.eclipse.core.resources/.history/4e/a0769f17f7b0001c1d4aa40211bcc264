@@ -1,0 +1,11 @@
+package com.JavaLive.Session2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		PracticeConstructor pc = new PracticeConstructor("Sanal", 30, 70.56f);
+		System.out.println(pc.getAge() + pc.getHeight() + pc.getName());
+		
+	}
+}

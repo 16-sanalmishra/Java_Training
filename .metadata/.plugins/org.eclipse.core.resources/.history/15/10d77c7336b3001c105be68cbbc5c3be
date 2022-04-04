@@ -1,0 +1,8 @@
+package com.JavaLive.Session2;
+
+public class StringExample {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("Sanal is a very good boy");
+	}
+}

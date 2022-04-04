@@ -1,0 +1,14 @@
+package com.JavaLive.Session2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		PracticeConstructor pc = new PracticeConstructor();
+		PracticeConstructor pc1 = new PracticeConstructor("sanal" , 10 , 89.6f);
+		
+		System.out.println(pc.getAge());
+		System.out.println(pc1.getName());
+		
+	}
+}
