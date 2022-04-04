@@ -1,0 +1,35 @@
+package com.JavaLive.Session6;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import com.JavaLive.Session5.HashExampleClass;
+
+public class HashSetExample {
+
+	
+
+	public static void main(String[] args) {
+		
+		HashExampleClass h1 = new HashExampleClass(20 , "Sanal" , "CSE" , 80005);
+		HashExampleClass h2 = new HashExampleClass(21 , "Snehil" , "ME" , 8002);
+		HashExampleClass h3 = new HashExampleClass(202 , "Sneha" , "CE" , 80035);
+		HashExampleClass h4 = new HashExampleClass(2 , "Sonal" , "EC" , 80053);
+		HashExampleClass h5 = new HashExampleClass(120 , "Sonali" , "CSE" , 80105);
+		HashExampleClass h = new HashExampleClass();
+		
+		Set<HashExampleClass> s = new HashSet<>();
+		s.add(h1);
+		s.add(h2);
+		s.add(h3);
+		s.add(h4);
+		s.add(h5);
+		
+		System.out.println(s.size());
+		s.toString();
+	}
+
+
+		
+	}
+
