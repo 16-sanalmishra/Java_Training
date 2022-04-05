@@ -1,0 +1,25 @@
+package com.JavaLive.Session7;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileExample {
+
+	public static void main(String[] args) {
+		String s = "Hello form the new File just got created....!!!";
+		try {
+			FileOutputStream fo = new FileOutputStream("C:\\Users\\sanamishra\\eclipse-workspace\\Java_FSD_Practice\\out\\testFile.txt");
+			fo.write(65);
+			fo.write(s.getBytes());
+			System.out.println("File Created Successfully...!!!!");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
