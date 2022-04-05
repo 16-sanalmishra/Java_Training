@@ -1,0 +1,41 @@
+package com.JavaLive.Session7;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class FilesExample {
+	public static void main(String[] args) {
+		SearchMyFile s = new SearchMyFile("filesExamples.java");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the path of the Directory you want to search in........!!!!!!!");
+		
+		// Will Display All The Files Available In The Directory.
+		String filePath = displayTheAvailables(sc);
+		
+		File file = new File(filePath);
+		String[] fileList = file.list();
+		System.out.println("Here are the files from the directory....");
+
+		for (String f1 : fileList) {
+			System.out.println(f1);
+		}
+		
+		//Check For The Availales.
+		checkFileAvailability(s, file);
+		
+	}
+
+	private static void checkFileAvailability(SearchMyFile s, File file) {
+		if(s.accept(file, s.fileName)) {
+			System.out.println("File Found");
+		}
+		else {
+			System.out.println("File Not Present");
+		}
+	}
+
+	private static String displayTheAvailables(Scanner sc) {
+		String fP = sc.nextLine();
+		return fP;
+	}
+}
