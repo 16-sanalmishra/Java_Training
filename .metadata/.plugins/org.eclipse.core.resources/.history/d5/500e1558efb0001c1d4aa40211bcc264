@@ -1,9 +1,0 @@
-package com.JavaLive.Session1;
-
-public class TypeCasting {
-	public void typeCast() {
-		char s = 'A';
-		int n = (int) s;
-		
-	}
-}
