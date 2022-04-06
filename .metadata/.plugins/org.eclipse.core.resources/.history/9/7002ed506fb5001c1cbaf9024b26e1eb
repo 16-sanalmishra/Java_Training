@@ -1,0 +1,17 @@
+package com.JavaLive.Session8;
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+		
+	}
+}
+class Demothread implements Runnable() {
+	
+}
+
+@Override
+public void run() {
+	// TODO Auto-generated method stub
+	
+}

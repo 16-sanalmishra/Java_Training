@@ -1,0 +1,9 @@
+package com.JavaLive.Session6;
+
+public class HashSetExample {
+
+	public static void main(String[] args) {
+		
+		HashSetExample h1 = new HashSetExample(20 , "Sanal" , "CSE" , 8005);
+	}
+}

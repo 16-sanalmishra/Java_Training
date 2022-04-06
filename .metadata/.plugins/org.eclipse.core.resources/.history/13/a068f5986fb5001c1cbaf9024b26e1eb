@@ -1,0 +1,20 @@
+package com.JavaLive.Session8;
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+		Demothread d = new Demothread();
+		Thread t = new Thread(d);
+
+	}
+
+}
+
+class Demothread implements Runnable()
+{
+
+		@Override
+			public void run() {
+
+}
+}

@@ -1,0 +1,10 @@
+package com.JavaLive.Session5;
+
+import java.util.*;
+
+public class LinkedList {
+
+	public static void main(String[] args) {
+		List<Integer> ll = (List<Integer>) new LinkedList();
+	}
+}

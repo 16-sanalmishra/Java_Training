@@ -1,0 +1,10 @@
+package com.JavaLive.Session5;
+
+import java.util.*;
+
+public class PracticeArrayList {
+	List<Integer> ar = new ArrayList<>();
+	System.out.println("strList: ");
+	
+	
+}
