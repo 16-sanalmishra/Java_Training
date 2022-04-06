@@ -29,7 +29,7 @@ class BankAccount implements Runnable{
 		this.balance = 100;
 	}
 	
-	public synchronized void withdrawMoney(int amount) {
+	public void withdrawMoney(int amount) {
 		System.out.println(Thread.currentThread().getName() + ": Want to withdraw: " + amount);
 		if (balance >= amount) {
 			System.out.println(Thread.currentThread().getName() + ": About to withdraw: " + amount);
