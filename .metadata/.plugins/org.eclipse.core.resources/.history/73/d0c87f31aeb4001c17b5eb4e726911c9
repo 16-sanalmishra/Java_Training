@@ -1,0 +1,13 @@
+package com.JavaLive.Session7;
+
+public class SerializabeObject {
+
+	private int age;
+	String name;
+	public SerializabeObject(int age, String name) {
+		
+		this.age = age;
+		this.name = name;
+	}
+
+}

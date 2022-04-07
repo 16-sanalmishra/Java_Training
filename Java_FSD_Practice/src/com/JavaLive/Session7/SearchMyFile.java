@@ -23,6 +23,12 @@ public class SearchMyFile implements FilenameFilter , Comparable<SearchMyFile>{
 		
 		return this.fileName.compareTo(o.fileName);
 	}
+
+	@Override
+	public String toString() {
+		return String.join(System.lineSeparator(), fileName);
+	}
+	
 	
 
 }

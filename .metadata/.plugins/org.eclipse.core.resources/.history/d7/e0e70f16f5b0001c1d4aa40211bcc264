@@ -1,0 +1,10 @@
+package com.JavaLive.Session2;
+
+public class Test {
+
+	private void mian() {
+		// TODO Auto-generated method stub
+		PracticeConstructor pc = new PracticeConstructor("SANAL", 21, 68.4f);
+		
+	}
+}

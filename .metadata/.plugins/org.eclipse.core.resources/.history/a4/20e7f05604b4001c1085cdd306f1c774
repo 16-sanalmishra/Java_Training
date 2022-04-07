@@ -1,0 +1,51 @@
+package com.JavaLive.Session5;
+
+import java.util.*;
+
+public class PracticeExamples {
+	public static void main(String[] args) {
+		letsGetData d1 = new letsGetData(1, "Sanal");
+		Set<Integer> si = new TreeSet<>();
+		si.add(2);
+		si.add(20);
+		si.add(22);
+		si.add(12);
+		si.add(289);
+		si.add(200);
+		si.add(21);
+		si.add(2);
+		
+		printSet(si); 
+		
+	}
+
+	private static void printSet(Set<Integer> si) {
+		// TODO Auto-generated method stub
+		for(Integer i : si) {
+			System.out.print(i + " ");
+		}
+		
+	}
+	
+	class letsCompare implements Comparable<>{
+
+		@Override
+		public int compareTo(si o) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+		
+	}
+	class letsGetData{
+		private int age;
+		private String name;
+		public letsGetData(int age, String name) {
+			
+			this.age = age;
+			this.name = name;
+		}
+		
+		
+		
+	}
+}

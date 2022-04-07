@@ -1,0 +1,28 @@
+package com.JavaLive.Session7;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class DeleteFile {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		try {
+			File f = new File("C:\\Users\\sanamishra\\eclipse-workspace\\Java_FSD_Practice\\src\\com\\JavaLive\\Session8\\deletemeFile.txt");
+			if(f.delete()) {
+			
+				System.out.println(f.getName() + " Deleted Successfully");
+			}
+			else {
+				System.out.println(f.getName() + "doesn't exist");
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		sc.close();
+	}
+}
