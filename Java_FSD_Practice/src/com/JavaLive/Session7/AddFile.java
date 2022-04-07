@@ -12,7 +12,8 @@ public class AddFile {
 
 		String filePath = "C:\\Users\\sanamishra\\eclipse-workspace\\Java_FSD_Practice\\src\\com\\JavaLive\\Session8"
 				+ "\\" + n;
-
+		String escaped = filePath.replace( "\\\\" , "\\");
+		System.out.println(escaped);
 		try {
 			FileOutputStream f = new FileOutputStream(filePath);
 		} catch (FileNotFoundException e) {
