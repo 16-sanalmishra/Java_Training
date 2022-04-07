@@ -1,5 +1,0 @@
-1649069324317	Delete element
-1649134852243	Extract constant 'filePath'
-1649154879900	Extract method 'extracted'
-1649157158402	Extract method 'checkFileAvailability'
-1649258736936	Rename type 'FilesExample'
