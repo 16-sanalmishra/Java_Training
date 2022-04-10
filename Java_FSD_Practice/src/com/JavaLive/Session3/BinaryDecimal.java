@@ -17,7 +17,7 @@ public class BinaryDecimal {
 			}
 			
 		
-		System.out.println(sum);
+		System.out.println("The binary of " + s + " is :" + sum);
 		
 		sc.close();
 	}
