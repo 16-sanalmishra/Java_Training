@@ -9,7 +9,6 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
@@ -19,11 +18,25 @@ public class Phase1Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("\t\t\t\t\t\t\t" + "Hello And Welcome to PathMyFile.com" + "\n");
+		System.out.println("\t\t\t\t\t\t\t" + "Hello And Welcome to LockedMe.com" + "\n");
 		System.out.println("\t\t\t\t\t\t\t" + "Developed By: Sanal Mishra" + "\n");
+		
 		System.out.println("Please enter the path of the directory. ");
-		String filePath = sc.nextLine();
-		int r = displayOperations(sc);
+		String fileP = sc.nextLine();
+		String filePath="";
+		int r=0;
+		
+		if(fileP.contains("\\")) {
+			filePath = fileP;
+			r = displayOperations(sc);
+			
+		}
+		else {
+			System.out.println("Please enter a valid path and ReRun the Program..!!");
+			System. exit(0);
+		}
+		
+		
 
 		while (true) {
 			switch (r) {
@@ -89,6 +102,7 @@ public class Phase1Main {
 			}
 		}
 		System.out.println("Thank You !!");
+		sc.close();
 
 	}
 
@@ -119,7 +133,7 @@ public class Phase1Main {
 
 		List<String> l = Arrays.asList(fileList);
 		Collections.sort(l);
-		
+
 		Set<String> h = new TreeSet<String>();
 		Iterator it = l.iterator();
 		while (it.hasNext()) {
@@ -148,7 +162,7 @@ public class Phase1Main {
 		} catch (DirectoryNotEmptyException e) {
 			System.out.println("Directory is not empty.");
 		} catch (IOException e) {
-			System.out.println("Invalid permissions.");
+
 		}
 
 		System.out.println("Deletion successful.");
