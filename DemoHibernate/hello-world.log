@@ -1,0 +1,46 @@
+22:42:33,895 DEBUG SQL:103 - 
+    
+    create table House (
+       id integer not null auto_increment,
+        Area varchar(255),
+        HouseNumber integer,
+        no integer not null,
+        type varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+22:42:33,986 DEBUG SQL:103 - 
+    insert 
+    into
+        House
+        (Area, HouseNumber, no, type) 
+    values
+        (?, ?, ?, ?)
+22:42:33,989 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Staaf Club]
+22:42:33,990 TRACE BasicBinder:65 - binding parameter [2] as [INTEGER] - [1234]
+22:42:33,990 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [2]
+22:42:33,990 TRACE BasicBinder:65 - binding parameter [4] as [VARCHAR] - [3BHK]
+23:01:04,432 DEBUG SQL:103 - 
+    
+    alter table House 
+       add column hType varchar(255)
+23:01:04,455 DEBUG SQL:103 - 
+    
+    alter table House 
+       add column Type2No integer
+23:01:04,464 DEBUG SQL:103 - 
+    
+    alter table House 
+       add column newType varchar(255)
+23:01:04,545 DEBUG SQL:103 - 
+    insert 
+    into
+        House
+        (Area, HouseNumber, No, hType, Type2No, newType) 
+    values
+        (?, ?, ?, ?, ?, ?)
+23:01:04,552 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [ADM]
+23:01:04,552 TRACE BasicBinder:65 - binding parameter [2] as [INTEGER] - [0]
+23:01:04,552 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [1]
+23:01:04,553 TRACE BasicBinder:65 - binding parameter [4] as [VARCHAR] - [type1String]
+23:01:04,553 TRACE BasicBinder:65 - binding parameter [5] as [INTEGER] - [2]
+23:01:04,553 TRACE BasicBinder:65 - binding parameter [6] as [VARCHAR] - [type2String]

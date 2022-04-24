@@ -1,0 +1,114 @@
+11:10:11,134 DEBUG SQL:103 - 
+    
+    create table Guide (
+       id integer not null auto_increment,
+        Guide Name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+11:10:11,153 DEBUG SQL:103 - 
+    
+    create table Student (
+       id integer not null auto_increment,
+        StudentName varchar(255),
+        Satndard integer,
+        guide_id integer,
+        primary key (id)
+    ) engine=InnoDB
+11:10:11,176 DEBUG SQL:103 - 
+    
+    alter table Student 
+       add constraint FKb4ny3l3cnsxbbn601ev8mhlj5 
+       foreign key (guide_id) 
+       references Guide (id)
+11:10:11,263 DEBUG SQL:103 - 
+    insert 
+    into
+        Guide
+        (Guide Name) 
+    values
+        (?)
+11:10:11,265 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Suresh]
+11:13:45,503 DEBUG SQL:103 - 
+    
+    create table Guide (
+       id integer not null auto_increment,
+        Guide Name varchar(255),
+        S_ID integer,
+        primary key (id)
+    ) engine=InnoDB
+11:13:45,519 DEBUG SQL:103 - 
+    
+    create table Student (
+       id integer not null auto_increment,
+        StudentName varchar(255),
+        Satndard integer,
+        guide_id integer,
+        primary key (id)
+    ) engine=InnoDB
+11:13:45,583 DEBUG SQL:103 - 
+    
+    alter table Student 
+       add constraint FKb4ny3l3cnsxbbn601ev8mhlj5 
+       foreign key (guide_id) 
+       references Guide (id)
+11:13:45,677 DEBUG SQL:103 - 
+    insert 
+    into
+        Guide
+        (Guide Name, S_ID) 
+    values
+        (?, ?)
+11:13:45,680 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Suresh]
+11:13:45,681 TRACE BasicBinder:65 - binding parameter [2] as [INTEGER] - [143]
+11:15:30,906 DEBUG SQL:103 - 
+    
+    create table Guide (
+       id integer not null auto_increment,
+        gName varchar(255),
+        S_ID integer,
+        primary key (id)
+    ) engine=InnoDB
+11:15:30,932 DEBUG SQL:103 - 
+    
+    create table Student (
+       id integer not null auto_increment,
+        StudentName varchar(255),
+        Satndard integer,
+        guide_id integer,
+        primary key (id)
+    ) engine=InnoDB
+11:15:30,953 DEBUG SQL:103 - 
+    
+    alter table Student 
+       add constraint FKb4ny3l3cnsxbbn601ev8mhlj5 
+       foreign key (guide_id) 
+       references Guide (id)
+11:15:31,116 DEBUG SQL:103 - 
+    insert 
+    into
+        Guide
+        (gName, S_ID) 
+    values
+        (?, ?)
+11:15:31,119 TRACE BasicBinder:65 - binding parameter [1] as [VARCHAR] - [Suresh]
+11:15:31,120 TRACE BasicBinder:65 - binding parameter [2] as [INTEGER] - [143]
+11:15:31,127 DEBUG SQL:103 - 
+    insert 
+    into
+        Student
+        (guide_id, StudentName, Satndard) 
+    values
+        (?, ?, ?)
+11:15:31,128 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+11:15:31,128 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Sanal]
+11:15:31,129 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [12]
+11:15:31,131 DEBUG SQL:103 - 
+    insert 
+    into
+        Student
+        (guide_id, StudentName, Satndard) 
+    values
+        (?, ?, ?)
+11:15:31,131 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+11:15:31,132 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Ayush]
+11:15:31,133 TRACE BasicBinder:65 - binding parameter [3] as [INTEGER] - [12]
